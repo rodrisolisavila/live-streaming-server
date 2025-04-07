@@ -11,7 +11,7 @@ const httpServer = createServer();
 // Crear una instancia de Socket.IO asociada al servidor HTTP
 const io = new Server(httpServer, {
   cors: {
-    origin: true,
+    origin: "*",
     methods: ["GET", "POST"],
   },
 });
